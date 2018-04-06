@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mi primer App</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/32px-favicon.png">
+
+</head>
+
+<body>
+
+	<header>
+
+		<nav align="center">
+			<ul>
+				<li><a href="index.html"><img src="images/32px-favicon.png"></a></li>
+				<li><a href="index.html">Volver</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+		<section>
+			<form>
+				<label>Nombre</label><input type="text" name="name">
+				<label>Correo</label><input type="email" name="email">
+				<label>Teléfono</label><input type="tel" name="phone">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+
+		<div>
+			<ul>
+				<li>
+					<a href="index.html">Volver</a>
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<form id="contact">
+				<label>Nombre</label><input type="text" name="name">
+				<label>Correo</label><input type="email" name="email">
+				<label>Teléfono</label><input type="tel" name="phone">
+				<label>Mensaje</label><input type="text" name="msg">
+			</form>
+		</div>
+
+	</footer>
+
+<!-- Aquí van los scripts para que carguen después del contenido de la web -->
+  <!-- Este es el que hace funcionar JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<!-- Este es el Javascript aplicado para la web.
+     Incluye JQuery, pot lo que debe ir siempre después de su script -->
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
