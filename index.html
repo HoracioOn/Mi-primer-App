@@ -13,29 +13,18 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css">
 <link rel="icon" href="images/32px-favicon.png">
-
 </head>
 
 <body>
 
-	<header>
+	<header id="top">
+		<nav class="menunav fondoblanco-halfopacity"><a href="#top"><img src="images/32px-favicon.png"></a></nav>
 
-		<nav align="center">
+			<div class="contenedor imgcabecera">
 
-			<ul>
-				<li>
-					<a href="#titular"><img src="images/32px-favicon.png"></a>
-				</li>
-				<li>
-					<a href="#contact">Contacto</a>
-				</li>
-			</ul>
-
-		</nav>
-
-			<div id="img-about">
-
-				<h1 id="titular" class="text-info display-4" align="center">¿Qué tan bien <br /> gestionas tu Branding?</h1>
+				<h1 id="titular" class="text-info titulo text-center">¿Qué tan bien gestionas tu
+				<strong>BRANDING</strong>?
+				</h1>
 
 			</div>
 	</header>
@@ -45,18 +34,17 @@
 		<section>
 
 
-			<article id="about" align="center">
+			<article class="contenedor margen-sup">
 
-				<h2 class="text-left">Sobre este Test...</h2>
+				<h2 class="margen-sup">Sobre este Test...</h2>
 
-				<p class="text-left">Nadie conoce tu negocio mejor que tu. Y ni que decir de tus clientes, eso es algo en lo que estamos de acuerdo. Sin embargo, es probable que en ciertos momentos te surjan dudas en la forma en que utilizas tu marca, o manejas tu marketing, o incluso en el trato y la forma que se supone deberías llevar con los clientes. O puede suceder, al contrario como en el peor de los casos, que nunca tengas dudas, pero tu negocio no esté consiguiendo los resultados esperados.</p>
-				<p class="text-left">Esto es totalmente natural.<br />
-				Y es que nadie nace sabiendo de todo, es muy difícil enfocarse en mantener un negocio a flote y a la vez aprender todo lo necesario para explotar el potencial de su imagen y generarle la mejor reputación. Por suerte, he enfocado mis esfuerzos en conseguir las mejores respuestas a todas esas preguntas que surgen a la hora de tomar decisiones. Como una muestra de lo que puedo hacer por ti, me tomé la libertad de desarrollar este test, que te dirá al final que tan bien conoces y manejas la imagen de tu empresa.</p>
-				<strong>¿Te atreves a ponerte a prueba?</strong>
+				<p class="parrafos">Nadie conoce tu negocio mejor que tu. Y ni que decir de tus clientes, eso es algo en lo que estamos de acuerdo. Sin embargo, es probable que en ciertos momentos te surjan dudas en la forma en que utilizas tu marca, o manejas tu marketing, o incluso en el trato y la forma que se supone deberías llevar con los clientes. O puede suceder, al contrario como en el peor de los casos, que nunca tengas dudas, pero tu negocio no esté consiguiendo los resultados esperados.</p>
+				<p class="parrafos">Esto es totalmente natural, y es que nadie nace sabiendo de todo, es muy difícil enfocarse en mantener un negocio a flote y a la vez aprender todo lo necesario para explotar el potencial de su imagen y generarle la mejor reputación. Por suerte, he enfocado mis esfuerzos en conseguir las mejores respuestas a todas esas preguntas que surgen a la hora de tomar decisiones. Como una muestra de lo que puedo hacer por ti, me tomé la libertad de desarrollar este test que te dirá al final que tan bien conoces y manejas la imagen de tu empresa.</p>
+				<strong class="margen-sup">¿Te atreves a ponerte a prueba?</strong>
 
-			<div class="container">
-			    <div class="center">
-			        <button class="btn btn-primary btn-lg btn-marg" data-toggle="modal" data-target="#demo-modal"><h3>¡Entrar al Test!</h3></button>
+			<div class="contenedor margen-sup">
+			    <div>
+			        <button class="btn btn-primary btn-lg margen-inf" data-toggle="modal" data-target="#demo-modal"><h3>¡Entrar al Test!</h3></button>
 			    </div>
 			</div>
 			</article>
@@ -64,11 +52,28 @@
 
 		</section>
 
-		<section id="newsletter">
+		<section id="marcas" class="contenedor margen-sup margen-inf">
+			<div class="row margen-sup">
+				<h3>Algunas marcas con las que he trabajado:</h3>
+			</div>
+			<div class="contenedorow margen-sup margen-inf">
+				<div >
+					<img class="marca" src="images/apple-touch-icon-152x152-precomposed.png">
+				</div>
+				<div >
+					<img class="marca" src="images/apple-touch-icon-152x152-precomposed.png">
+				</div>
+				<div >
+					<img class="marca" src="images/apple-touch-icon-152x152-precomposed.png">
+				</div>
+			</div>
+		</section>
 
-			<form align="center">
-				<input class="form-control input-color" type="email" name="email" placeholder="email@tusitio.com">
-				<input class="btn btn-light btn-lg btn-marg" type="submit" value="¡Suscríbete a mi blog!" />
+		<section class="contenedor fondogrisclaro anchototal margen-sup altura">
+
+			<form class="contenedor-vertcent">
+				<input class="form-control input-color margen-sup" type="email" name="email" placeholder="email@tusitio.com">
+				<input class="btn btn-light btn-lg margen-sup" type="submit" value="¡Suscríbete a mi blog!" />
 			</form>
 
 		</section>
@@ -182,9 +187,10 @@
 
 		</section>
 
+
 	</main>
 
-<footer class="footer">
+<footer class="footer anchototal margen-sup">
 
     <div class="container" id="contact">
         <div class="row">
@@ -213,7 +219,7 @@
             <div class="col-md-5">
                 <form>
                     <fieldset class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@tusitio.com">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@tusitio.com" autocomplete="email">
                     </fieldset>
                     <fieldset class="form-group">
                         <textarea class="form-control" id="exampleMessage" placeholder="Mensaje"></textarea>

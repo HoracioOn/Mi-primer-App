@@ -1,163 +1,191 @@
-/* Aquí se importa la webfont del sitio */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif');
+/* Facilitar la medida de objetos en el CSS
+--------------------------------------------------  */
+* {box-sizing: border-box;}
+
+/* Ajustes para el footer pegajoso
+--------------------------------------------------  */
+html {
+	position: relative;
+	min-height: 100%;}
 
 body {
-		font-family: 'PT Sans', sans-serif;
-		background-color: #F9FAFC;
-		box-sizing: border-box;
-		margin: 0px;
+	margin-bottom: 300px;}
+
+/* Aquí se importan laa webfonts del sitio
+--------------------------------------------------  */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif');
+
+
+/* Aquí se define el estilo de la página en general
+	(Fuente, color de fondo)
+--------------------------------------------------  */
+body {
+	font-family: 'PT Sans', sans-serif;
+	background-color: #F9FAFC;}
+
+/* Confiere a un objeto el ancho del 100% */
+.anchototal {
+	width: 100%;}
+
+/* Define un márgen superior estándar */
+.margen-inf {
+	margin-bottom: 25px;}
+
+/* Define un márgen inferior estándar */
+.margen-sup {
+	margin-top: 25px;}
+
+/* Define una altura de objeto estándar */
+.altura {
+	height: 255px;}
+
+/* Quita el bulletpoint, el margen y el padding de las listas */
+.listas {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;}
+
+/* Define el estilo de la cabecera
+--------------------------------------------------  */
+.imgcabecera {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 250px;
+	background-image: linear-gradient(white, #cceeff);
+	padding: 65px;
+	border-bottom: 5px solid #E5E9F2;}
+
+#titular {
+	font-weight: 700;}
+
+/* Define el estilo del menu
+--------------------------------------------------  */
+.menunav {
+	border-radius: 0px 15px 15px 0px;
+	border: 2px solid #E5E9F2;
+	margin-left: 0px;
+	margin-top: 35px;
+	padding: 25px;
+	position: fixed;
+	text-align: center;
+	z-index: 999}
+
+/* Define el ancho de los párrafos
+--------------------------------------------------  */
+.parrafos {
+	width: 70%;}
+
+/* Define el ancho de los párrafos en pantallas pequeñas */
+@media (max-width: 1100px) {
+	.parrafos {
+		width: 80%;}
 }
 
-main {
-display: flex;
-flex-direction: column;
+/* Define el estilo de un contenedor
+(ejemplo: artículo o div)
+--------------------------------------------------  */
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+	margin-left: auto;
+	margin-right: auto;}
+
+.contenedor-vertcent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	width: 450px;}
+
+@media (max-width: 500px) {
+	.contenedor-vertcent {
+		width: 90%;}
 }
 
-label {
-	padding: 5px;
-}
-
-input {
-	border-radius: 4px;
-	color: red;
+.contenedorow {
+	display: flex;
+	flex-flow: row wrap;
 	}
 
-	::-webkit-input-placeholder {
+/* Define estilos de fondo para los contenedores.
+(ejemplo: artículo o div)
+--------------------------------------------------  */
+.fondogrisclaro {
+	background-color: #cccccc;}
+
+.fondoblanco-halfopacity {
+	background-color: rgba(255,255,255,0.7);}
+
+/* Estilo para los inputs.
+-------------------------------------------------- */
+.input-color {
+	color: black;
+	text-align: center;
+	font-weight: bold;}
+
+/* Estilo para el placeholder en los inputs (Chrome) */
+::-webkit-input-placeholder {
 	font-weight: bold;
 	font-style: italic;
 	text-align: center;
-	color: #E5E9F2;
-}
+	color: #E5E9F2;}
+
+/* Estilo para el placeholder en los inputs (Firefox) */
 :-moz-placeholder {
 	font-weight: bold;
 	font-style: italic;
 	text-align: center;
-	color: #E5E9F2;
-}
+	color: #E5E9F2;}
 
-.input-color {
-  color: rgba(61,190,237,1);
-  text-align: center;
-  font-weight: bold;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav {
-	background-color: white;
-	border-color: #E5E9F2;
-	border-radius: 0px 15px 15px 0px;
-	border-style: solid;
-	border-width: 1px;
-	font-weight: 500;
-	margin-left: 0px;
-	margin-right: auto;
-	margin-top: 35px;
-	padding: 15px;
-	position: fixed;
-}
-
-article {
-	margin: auto;
-	margin-top: 25px;
-	width: 60%;
-}
-
-p {
-	width: 90%;
-}
-
-.btn-marg {
-	margin: 15px;
-	}
-
-
-#img-about {
-	display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		height: 200px;
-		background-image: linear-gradient(white, #cceeff);
-		padding: 15px;
-		border-bottom: 5px solid #E5E9F2; 
-}
-
-#newsletter {
-	display: flex;
-	align-items: center;
-  justify-content: center;
-	height: 255px;
-	background-color: #cccccc;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Sticky footer position and size
+/* Define el estilo de las imágenes
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 300px;
-}
+.marca {
+	border-radius: 50%;
+	margin: 15px;}
+
+/* Footer pegajoso, posición y medidas
+-------------------------------------------------- */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 300px;
+	position: absolute;
+	bottom: 0;
+	height: 300px;}
+
+/* Footer más alto en pantallas pequeñas */
+@media (max-width: 770px) {
+	.footer {
+		height: 500px;}
+	body {
+		margin-bottom: 500px;}
 }
 
-/* Taller footer on small screens */
-@media (max-width: 34em) {
-    body {
-      margin-bottom: 500px;
-    }
-    .footer {
-      height: 500px;
-    }
-}
-
-/* Sticky footer style and color
+/* Estilo y color del Footer
 -------------------------------------------------- */
 footer {
-  padding-top: 30px;
-  background-color: #292c2f;
-  color: #bbb;
-}
+	padding-top: 40px;
+	background-color: #292c2f;
+	color: #bbb;}
 
 footer a {
-  color: #999;
-  text-decoration:none;
-}
+	color: #999;
+	text-decoration:none;}
 
 footer a:hover, footer a:focus {
-  color: #aaa;
-  text-decoration:none;
-  border-bottom:1px dotted #999;
-}
+	color: #ccc;
+	text-decoration:none;}
 
 footer .form-control {
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
-}
+	background-color: #1f2022;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	color: #d1d2d2;
+	padding: 0.7em 1em;}
