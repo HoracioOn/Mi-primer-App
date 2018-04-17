@@ -53,7 +53,6 @@ body {
 	margin-right: auto;
 	width: 100%;
 	height: 250px;
-	background-image: linear-gradient(white, #cceeff);
 	padding: 65px;
 	border-bottom: 5px solid #E5E9F2;}
 
@@ -71,6 +70,58 @@ body {
 	position: fixed;
 	text-align: center;
 	z-index: 999}
+
+/* Tooltip css
+--------------------------------------------------  */
+
+.ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+    width: 15%;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+
+
+
 
 /* Define el ancho de los párrafos
 --------------------------------------------------  */
@@ -112,7 +163,8 @@ body {
 .contenedorow {
 	display: flex;
 	flex-flow: row wrap;
-	}
+	justify-content: space-around;
+    width: 70%;}
 
 /* Define estilos de fondo para los contenedores.
 (ejemplo: artículo o div)
@@ -147,8 +199,138 @@ body {
 /* Define el estilo de las imágenes
 -------------------------------------------------- */
 .marca {
-	border-radius: 50%;
+	border-radius: 15px;
 	margin: 15px;}
+
+
+/* Define el estilo de las imágenes
+-------------------------------------------------- */
+.btngo.is-open ~ .description {
+  opacity: 0;
+}
+
+.btngo {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 80px;
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  text-align: center;
+}
+
+.btngo-front {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  background-color: #223344;
+  color: #fff;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 15px;
+}
+
+.btngo-front:hover {
+  background-color: #014c99;
+}
+
+.btngo.is-open .btn-front {
+  pointer-events: none;
+  line-height: 160px;
+}
+
+.btngo-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  color: #222;
+  -webkit-transform: translateZ(-2px) rotateX(180deg);
+          transform: translateZ(-2px) rotateX(180deg);
+  overflow: hidden;
+  transition: box-shadow 0.8s ease;
+}
+
+.btngo-back p {
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.btngo-back button {
+  padding: 12px 20px;
+  width: 30%;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: background 0.15s ease;
+}
+.btngo-back button:focus {
+  outline: 0;
+}
+.btngo-back button.yes {
+  background-color: #2196F3;
+  color: #fff;
+}
+.btngo-back button.yes:hover {
+  background-color: #51adf6;
+}
+.btngo-back button.no {
+  color: #2196F3;
+}
+.btngo-back button.no:hover {
+  background-color: #ddd;
+}
+
+.btngo.is-open .btngo-back {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btngo[data-direction="left"] .btngo-back,
+.btngo[data-direction="right"] .btngo-back {
+  -webkit-transform: translateZ(-2px) rotateY(180deg);
+          transform: translateZ(-2px) rotateY(180deg);
+}
+
+.btngo.is-open {
+  width: 400px;
+  height: 160px;
+}
+
+.btngo[data-direction="top"].is-open {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.btngo[data-direction="right"].is-open {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.btngo[data-direction="bottom"].is-open {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.btngo[data-direction="left"].is-open {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
 
 /* Footer pegajoso, posición y medidas
 -------------------------------------------------- */

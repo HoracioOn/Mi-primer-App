@@ -8,21 +8,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Mi primer App</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$( function() {
+		$( document ).tooltip({
+			position: {
+				my: "center bottom-20",
+				at: "center top",
+				using: function( position, feedback ) {
+					$( this ).css( position );
+					$( "<div>" )
+					.addClass( "arrow" )
+					.addClass( feedback.vertical )
+					.addClass( feedback.horizontal )
+					.appendTo( this );
+					}
+			}
+		});
+	});
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css">
 <link rel="icon" href="images/32px-favicon.png">
 </head>
 
 <body>
-
 	<header id="top">
-		<nav class="menunav fondoblanco-halfopacity"><a href="#top"><img src="images/32px-favicon.png"></a></nav>
 
-			<div class="contenedor imgcabecera">
+		<nav class="menunav fondoblanco-halfopacity"><a href="#top" title="Volver arriba"><img src="images/32px-favicon.png"></a>
+		</nav>
 
-				<h1 id="titular" class="text-info titulo text-center">¿Qué tan bien gestionas tu
+		<div class="contenedor imgcabecera" id="gradient">
+
+				<h1 id="titular" class="text-light titulo text-center">¿Qué tan bien gestionas tu
 				<strong>BRANDING</strong>?
 				</h1>
 
@@ -34,7 +55,7 @@
 		<section>
 
 
-			<article class="contenedor margen-sup">
+			<article id="about" class="contenedor margen-sup">
 
 				<h2 class="margen-sup">Sobre este Test...</h2>
 
@@ -43,9 +64,17 @@
 				<strong class="margen-sup">¿Te atreves a ponerte a prueba?</strong>
 
 			<div class="contenedor margen-sup">
-			    <div>
-			        <button class="btn btn-primary btn-lg margen-inf" data-toggle="modal" data-target="#demo-modal"><h3>¡Entrar al Test!</h3></button>
-			    </div>
+
+				<div class="btngo">
+					<div class="btngo-back">
+						<p>Estás seguro?</p>
+						<button class="yes" data-toggle="modal" data-target="#demo-modal">Si</button>
+						<button class="no">No</button>
+					</div>
+					<div class="btngo-front">¡Vamos allá!
+					</div>
+				</div>
+
 			</div>
 			</article>
 
@@ -238,9 +267,6 @@
 <!-- Javascript Peersonalizado.
      Incluye JQuery, pot lo que debe ir siempre después de este -->
   <script src="js/scripts.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
