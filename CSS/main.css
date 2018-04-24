@@ -11,6 +11,12 @@ html {
 body {
 	margin-bottom: 300px;}
 
+p::selection {
+background: black;
+  color: white;
+}
+hr {margin: 60px;}
+
 /* Aquí se importan laa webfonts del sitio
 --------------------------------------------------  */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif');
@@ -52,9 +58,24 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	height: 250px;
+	height: 150px;
 	padding: 65px;
 	border-bottom: 5px solid #E5E9F2;}
+
+@media (max-width: 1100px) {
+	.imgcabecera {
+		height: 200px;}
+	}
+
+@media (max-width: 620px) {
+	.imgcabecera {
+		height: 250px;}
+	}
+
+@media (max-width: 420px) {
+	.imgcabecera {
+		height: 300px;}
+	}
 
 #titular {
 	font-weight: 700;}
@@ -126,7 +147,7 @@ body {
 /* Define el ancho de los párrafos
 --------------------------------------------------  */
 .parrafos {
-	width: 70%;}
+	width: 50%;}
 
 /* Define el ancho de los párrafos en pantallas pequeñas */
 @media (max-width: 1100px) {
@@ -175,6 +196,10 @@ body {
 .fondoblanco-halfopacity {
 	background-color: rgba(255,255,255,0.7);}
 
+.fondogris {
+	background-color: #666;
+height: 30px;}
+
 /* Estilo para los inputs.
 -------------------------------------------------- */
 .input-color {
@@ -200,7 +225,19 @@ body {
 -------------------------------------------------- */
 .marca {
 	border-radius: 15px;
-	margin: 15px;}
+	margin: 15px;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	opacity: .5;
+width: 400px;}
+
+.marca:hover, .marca:active {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	opacity: 1;}
+
+.grow {transition: all .2s ease-in-out;}
+.grow:hover, .grow:active {transform: scale(1.20);}
 
 
 /* Define el estilo de las imágenes
