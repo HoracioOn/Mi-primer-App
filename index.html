@@ -10,6 +10,7 @@
 <title>Mi primer App</title>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script>
 	$( function() {
 		$( document ).tooltip({
@@ -38,7 +39,7 @@
 <body>
 	<header id="top">
 
-		<nav class="menunav fondoblanco-halfopacity"><a href="#top" title="Volver arriba"><img src="images/32px-favicon.png"></a>
+		<nav class="menunav fondoblanco-halfopacity"><a href="#top" title="Volver arriba"><img class="floating-minilogo menunav-logo" src="images/32px-favicon.png"></a>
 		</nav>
 
 		<div class="contenedor imgcabecera" id="gradient">
@@ -74,8 +75,13 @@
 			</article>
 		</section>
 		<section>
-			<div class="fondogris margen-sup">
+			<div class="paralax text-center margen-sup mx-auto" >
+				<img class="paralax-img" src="images/img-about.png">
+				<img class="floating-logo logo-flota mx-auto" src="images/logo.png">
+				<div class="fondogris margen-sup logo-flota">
+				</div>
 			</div>
+			
 		</section>
 
 		<section id="marcas" class="contenedor margen-sup margen-inf">
@@ -84,13 +90,13 @@
 			</div>
 			<div class="contenedorow margen-sup margen-inf">
 				<div >
-					<img class="marca grow" src="http://horacioon.com/wp-content/uploads/2017/08/portf-lamen-min.png">
+					<img class="marca grow" src="images/portf-barra-min.png">
 				</div>
 				<div >
-					<img class="marca grow" src="http://horacioon.com/wp-content/uploads/2017/08/portf-tierr-min.png">
+					<img class="marca grow" src="images/portf-tierr-min.png">
 				</div>
 				<div >
-					<img class="marca grow" src="http://horacioon.com/wp-content/uploads/2017/08/portf-barra-min.png">
+					<img class="marca grow" src="images/portf-lamen-min.png">
 				</div>
 			</div>
 		</section>
@@ -207,7 +213,7 @@
 			<script src="js/multi-step-modal.js"></script>
 			<script>
 			sendEvent = function(sel, step) {
-			    $(sel).trigger('next.m.' + step);
+				$(sel).trigger('next.m.' + step);
 			}
 			</script>
 
@@ -218,51 +224,52 @@
 
 <footer class="footer anchototal margen-sup">
 
-    <div class="container" id="contact">
-        <div class="row">
-            <div class="col-md-5">
-                <h5>HoracioOn</h5>
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li><a href="#about">Sobre el test</a></li>
-                            <li><a href="https://horacioon.com/bio/">Sobre mi</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li><a href="https://horacioon.com/privacidad">Aviso de Privacidad</a></li>
-                            <li><a href="https://horacioon.com/blog">Conoce mi Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div class="col-md-2">
-                <h5 class="text-md-right">Contáctame</h5>
-                <hr>
-            </div>
-            <div class="col-md-5">
-                <form>
-                    <fieldset class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@tusitio.com" autocomplete="email">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <textarea class="form-control" id="exampleMessage" placeholder="Mensaje"></textarea>
-                    </fieldset>
-                    <fieldset class="form-group text-md-right text-sm-center">
-                        <button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
+	<div class="container" id="contact">
+		<div class="row">
+			<div class="col-md-5">
+				<h5>HoracioOn</h5>
+				<div class="row">
+					<div class="col-6">
+						<ul class="list-unstyled">
+							<li><a href="#about">Sobre el test</a></li>
+							<li><a href="https://horacioon.com/bio/">Sobre mi</a></li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul class="list-unstyled">
+							<li><a href="https://horacioon.com/privacidad">Aviso de Privacidad</a></li>
+							<li><a href="https://horacioon.com/blog">Conoce mi Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-2">
+				<h5 class="text-md-right">Contáctame</h5>
+				<hr>
+			</div>
+			<div class="col-md-5">
+				<form>
+					<fieldset class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@tusitio.com" autocomplete="email">
+					</fieldset>
+					<fieldset class="form-group">
+						<textarea class="form-control" id="exampleMessage" placeholder="Mensaje"></textarea>
+					</fieldset>
+					<fieldset class="form-group text-md-right text-sm-center text-center">
+						<button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<p class="text-center margen-inf margen-sup copyright">Copyright © 2018 <a href="#top">HoracioOn</a>. Hecho con <span class="fa fa-heart pulse2"></span> por <strong>Horacio Ontiveros</strong>.</p>
+	</div>
 </footer>
 
 
 
 <!-- Javascript Peersonalizado.
-     Incluye JQuery, pot lo que debe ir siempre después de este -->
+	 Incluye JQuery, pot lo que debe ir siempre después de este -->
   <script src="js/scripts.js"></script>
 </body>
 

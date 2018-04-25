@@ -4,18 +4,15 @@
 
 /* Ajustes para el footer pegajoso
 --------------------------------------------------  */
-html {
-	position: relative;
-	min-height: 100%;}
+html {position: relative; min-height: 100%;}
 
-body {
-	margin-bottom: 300px;}
+body {margin-bottom: 300px;}
 
-p::selection {
-background: black;
-  color: white;
-}
+p::selection {background: black; color: white;}
+
 hr {margin: 60px;}
+
+h1, h2, h3, h5 {font-family: 'PT Serif', serif;}
 
 /* Aquí se importan laa webfonts del sitio
 --------------------------------------------------  */
@@ -25,31 +22,22 @@ hr {margin: 60px;}
 /* Aquí se define el estilo de la página en general
 	(Fuente, color de fondo)
 --------------------------------------------------  */
-body {
-	font-family: 'PT Sans', sans-serif;
-	background-color: #F9FAFC;}
+body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 
 /* Confiere a un objeto el ancho del 100% */
-.anchototal {
-	width: 100%;}
+.anchototal {width: 100%;}
 
 /* Define un márgen superior estándar */
-.margen-inf {
-	margin-bottom: 25px;}
+.margen-inf {margin-bottom: 25px;}
 
 /* Define un márgen inferior estándar */
-.margen-sup {
-	margin-top: 25px;}
+.margen-sup {margin-top: 25px;}
 
 /* Define una altura de objeto estándar */
-.altura {
-	height: 255px;}
+.altura {height: 255px;}
 
 /* Quita el bulletpoint, el margen y el padding de las listas */
-.listas {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;}
+.listas {list-style-type: none;	margin: 0; padding: 0;}
 
 /* Define el estilo de la cabecera
 --------------------------------------------------  */
@@ -60,25 +48,15 @@ body {
 	width: 100%;
 	height: 150px;
 	padding: 65px;
-	border-bottom: 5px solid #E5E9F2;}
+	border-bottom: 2px solid #62f;}
 
-@media (max-width: 1100px) {
-	.imgcabecera {
-		height: 200px;}
-	}
+@media (max-width: 1100px) {.imgcabecera {height: 200px;}}
 
-@media (max-width: 620px) {
-	.imgcabecera {
-		height: 250px;}
-	}
+@media (max-width: 620px) {.imgcabecera {height: 250px;}}
 
-@media (max-width: 420px) {
-	.imgcabecera {
-		height: 300px;}
-	}
+@media (max-width: 420px) {.imgcabecera {height: 300px;}}
 
-#titular {
-	font-weight: 700;}
+#titular {font-weight: 700;}
 
 /* Define el estilo del menu
 --------------------------------------------------  */
@@ -90,70 +68,16 @@ body {
 	padding: 25px;
 	position: fixed;
 	text-align: center;
-	z-index: 999}
+	z-index: 9999;}
 
-/* Tooltip css
---------------------------------------------------  */
-
-.ui-tooltip, .arrow:after {
-    background: black;
-    border: 2px solid white;
-  }
-  .ui-tooltip {
-    padding: 10px 20px;
-    color: white;
-    border-radius: 20px;
-    font: bold 14px "Helvetica Neue", Sans-Serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 7px black;
-    width: 15%;
-  }
-  .arrow {
-    width: 70px;
-    height: 16px;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    margin-left: -35px;
-    bottom: -16px;
-  }
-  .arrow.top {
-    top: -16px;
-    bottom: auto;
-  }
-  .arrow.left {
-    left: 20%;
-  }
-  .arrow:after {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: -20px;
-    width: 25px;
-    height: 25px;
-    box-shadow: 6px 5px 9px -9px black;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .arrow.top:after {
-    bottom: -20px;
-    top: auto;
-  }
-
-
-
+.menunav-logo {position: absolute; left: 25px; top: 6px;}
 
 /* Define el ancho de los párrafos
 --------------------------------------------------  */
-.parrafos {
-	width: 50%;}
+.parrafos {width: 50%;}
 
 /* Define el ancho de los párrafos en pantallas pequeñas */
-@media (max-width: 1100px) {
-	.parrafos {
-		width: 80%;}
-}
+@media (max-width: 1100px) {.parrafos {width: 80%;}}
 
 /* Define el estilo de un contenedor
 (ejemplo: artículo o div)
@@ -176,50 +100,34 @@ body {
 	padding-bottom: 45px;
 	width: 450px;}
 
-@media (max-width: 500px) {
-	.contenedor-vertcent {
-		width: 90%;}
-}
+@media (max-width: 500px) {.contenedor-vertcent {width: 90%;}}
 
-.contenedorow {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-    width: 70%;}
+.contenedorow {display: flex; flex-flow: row wrap; justify-content: space-around; width: 70%;}
 
 /* Define estilos de fondo para los contenedores.
 (ejemplo: artículo o div)
 --------------------------------------------------  */
-.fondogrisclaro {
-	background-color: #cccccc;}
+.fondogrisclaro {background-color: #cccccc;}
 
-.fondoblanco-halfopacity {
-	background-color: rgba(255,255,255,0.7);}
+.fondoblanco-halfopacity {background-color: rgba(255,255,255,0.7);}
 
-.fondogris {
-	background-color: #666;
-height: 30px;}
+.fondogris {background-color: #ccc; height: 5px;}
+
+.paralax {height: 345px; display: flex; width: 100%;}
+
+.paralax-img {border-bottom: 2px solid #62f; width: 100%; display: flex; align-self: center; justify-content: center;}
+
+.logo-flota {display: flex; align-self: center; justify-content: center;}
 
 /* Estilo para los inputs.
 -------------------------------------------------- */
-.input-color {
-	color: black;
-	text-align: center;
-	font-weight: bold;}
+.input-color {color: black; text-align: center; font-weight: bold;}
 
-/* Estilo para el placeholder en los inputs (Chrome) */
-::-webkit-input-placeholder {
-	font-weight: bold;
-	font-style: italic;
-	text-align: center;
-	color: #E5E9F2;}
+/* (Chrome) */
+::-webkit-input-placeholder {font-weight: bold;	font-style: italic;	text-align: center;	color: #E5E9F2;}
 
-/* Estilo para el placeholder en los inputs (Firefox) */
-:-moz-placeholder {
-	font-weight: bold;
-	font-style: italic;
-	text-align: center;
-	color: #E5E9F2;}
+/* (Firefox) */
+:-moz-placeholder {font-weight: bold; font-style: italic; text-align: center; color: #E5E9F2;}
 
 /* Define el estilo de las imágenes
 -------------------------------------------------- */
@@ -229,175 +137,134 @@ height: 30px;}
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 	opacity: .5;
-width: 400px;}
+	width: 250px;}
 
-.marca:hover, .marca:active {
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
-	opacity: 1;}
+.marca:hover, .marca:active {filter: grayscale(0%); -webkit-filter: grayscale(0%); opacity: 1;}
 
 .grow {transition: all .2s ease-in-out;}
-.grow:hover, .grow:active {transform: scale(1.20);}
 
+.grow:hover, .grow:active {transform: scale(1.20);}
 
 /* Define el estilo de las imágenes
 -------------------------------------------------- */
-.btngo.is-open ~ .description {
-  opacity: 0;
-}
+.btngo.is-open ~ .description {opacity: 0;}
 
 .btngo {
-  display: block;
-  position: relative;
-  width: 200px;
-  height: 80px;
-  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  text-align: center;
-}
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 80px;
+	transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transform-style: preserve-3d; transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%; transform-origin: 50% 50%;
+	text-align: center;}
 
 .btngo-front {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 80px;
-  background-color: #223344;
-  color: #fff;
-  cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 15px;
-}
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 80px;
+	background-color: #223344;
+	color: #fff;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden; backface-visibility: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 15px;}
 
-.btngo-front:hover {
-  background-color: #014c99;
-}
+.btngo-front:hover {background-color: #014c99;}
 
-.btngo.is-open .btn-front {
-  pointer-events: none;
-  line-height: 160px;
-}
+.btngo.is-open .btn-front {pointer-events: none; line-height: 160px;}
 
 .btngo-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #eee;
-  color: #222;
-  -webkit-transform: translateZ(-2px) rotateX(180deg);
-          transform: translateZ(-2px) rotateX(180deg);
-  overflow: hidden;
-  transition: box-shadow 0.8s ease;
-}
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	color: #222;
+	-webkit-transform: translateZ(-2px) rotateX(180deg); transform: translateZ(-2px) rotateX(180deg);
+	overflow: hidden;
+	transition: box-shadow 0.8s ease;}
 
-.btngo-back p {
-  margin-top: 27px;
-  margin-bottom: 25px;
-}
+.btngo-back p {margin-top: 27px; margin-bottom: 25px;}
 
 .btngo-back button {
-  padding: 12px 20px;
-  width: 30%;
-  margin: 0 5px;
-  background-color: transparent;
-  border: 0;
-  border-radius: 2px;
-  font-size: 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transition: background 0.15s ease;
-}
-.btngo-back button:focus {
-  outline: 0;
-}
-.btngo-back button.yes {
-  background-color: #2196F3;
-  color: #fff;
-}
-.btngo-back button.yes:hover {
-  background-color: #51adf6;
-}
-.btngo-back button.no {
-  color: #2196F3;
-}
-.btngo-back button.no:hover {
-  background-color: #ddd;
-}
+	padding: 12px 20px;
+	width: 30%;
+	margin: 0 5px;
+	background-color: transparent;
+	border: 0;
+	border-radius: 2px;
+	font-size: 1em;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transition: background 0.15s ease;}
 
-.btngo.is-open .btngo-back {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
+.btngo-back button:focus {outline: 0;}
 
-.btngo[data-direction="left"] .btngo-back,
-.btngo[data-direction="right"] .btngo-back {
-  -webkit-transform: translateZ(-2px) rotateY(180deg);
-          transform: translateZ(-2px) rotateY(180deg);
-}
+.btngo-back button.yes {background-color: #2196F3; color: #fff;}
 
-.btngo.is-open {
-  width: 400px;
-  height: 160px;
-}
+.btngo-back button.yes:hover {background-color: #51adf6;}
+
+.btngo-back button.no {color: #2196F3;}
+
+.btngo-back button.no:hover {background-color: #ddd;}
+
+.btngo.is-open .btngo-back {box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);}
+
+.btngo[data-direction="left"] .btngo-back, .btngo[data-direction="right"] .btngo-back {
+	-webkit-transform: translateZ(-2px) rotateY(180deg); transform: translateZ(-2px) rotateY(180deg);}
+
+.btngo.is-open {width: 400px; height: 160px;}
 
 .btngo[data-direction="top"].is-open {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
+	-webkit-transform: rotateX(180deg); transform: rotateX(180deg);}
 
 .btngo[data-direction="right"].is-open {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
+	-webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
 
 .btngo[data-direction="bottom"].is-open {
-  -webkit-transform: rotateX(-180deg);
-          transform: rotateX(-180deg);
-}
+	-webkit-transform: rotateX(-180deg); transform: rotateX(-180deg);}
 
 .btngo[data-direction="left"].is-open {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
+	-webkit-transform: rotateY(-180deg); transform: rotateY(-180deg);}
 
 /* Footer pegajoso, posición y medidas
 -------------------------------------------------- */
-.footer {
-	position: absolute;
-	bottom: 0;
-	height: 300px;}
+.footer {position: absolute; bottom: 0; height: 331px;}
 
 /* Footer más alto en pantallas pequeñas */
-@media (max-width: 770px) {
-	.footer {
-		height: 500px;}
-	body {
-		margin-bottom: 500px;}
-}
+@media (max-width: 768px) {
+	.footer {height: 550px;}
+	body {margin-bottom: 550px;}
+	hr {margin: 32px;}}
+
+@media (max-width: 537px) {
+  .footer {height: 570px;}
+  body {margin-bottom: 570;}
+  hr {margin: 32px;}}
+
+@media (max-width: 358px) {
+  .footer {height: 590px;}
+  body {margin-bottom: 590;}
+  hr {margin: 32px;}}
+
+@media (max-width: 308px) {
+  .footer {height: 650px;}
+  body {margin-bottom: 650;}
+  hr {margin: 32px;}}
 
 /* Estilo y color del Footer
 -------------------------------------------------- */
-footer {
-	padding-top: 40px;
-	background-color: #292c2f;
-	color: #bbb;}
+footer { padding-top: 40px; padding-bottom: 40px; background-color: #292c2f; color: #bbb;}
 
-footer a {
-	color: #999;
-	text-decoration:none;}
+footer a {color: #999; text-decoration:none;}
 
-footer a:hover, footer a:focus {
-	color: #ccc;
-	text-decoration:none;}
+footer a:hover, footer a:focus {color: #ccc; text-decoration:none;}
 
 footer .form-control {
 	background-color: #1f2022;
@@ -408,3 +275,57 @@ footer .form-control {
 	resize: none;
 	color: #d1d2d2;
 	padding: 0.7em 1em;}
+
+.copyright {font-size: .8em;}
+
+.fa-heart {color: #ff415c; font-size: 15px; margin: 0 2px;}
+
+/* Animación
+-------------------------------------------------- */
+.pulse2 {
+	-webkit-animation-duration: 1s; -o-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; animation-iteration-count: infinite;
+	-webkit-animation-name: pulse2; -o-animation-name: pulse2; -moz-animation-name: pulse2; animation-name: pulse2;
+	-webkit-animation-timing-function: linear; -o-animation-timing-function: linear; -moz-animation-timing-function: linear; animation-timing-function: linear;}
+
+@-webkit-keyframes pulse2 {
+	0% {-webkit-transform: scale(1.1); transform: scale(1.1);}
+	50% {-webkit-transform: scale(0.8); transform: scale(0.8);}
+	100% {-webkit-transform: scale(1); transform: scale(1);}}
+
+@keyframes pulse2 {
+	0% {-webkit-transform: scale(1.1); transform: scale(1.1);}
+	50% {-webkit-transform: scale(0.8); transform: scale(0.8);}
+	100% {-webkit-transform: scale(1); transform: scale(1);}}
+
+.floating-logo {
+	-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; animation-iteration-count: infinite;
+	-webkit-animation-name: floating-logo; -moz-animation-name: floating-logo; animation-name: floating-logo;
+	-webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out;}
+
+@-webkit-keyframes floating-logo {
+	from {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+	50% {-webkit-transform: translate(-50%, 10px); transform: translate(-50%, 10px);}
+	to {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}}
+
+@keyframes floating-logo {
+	from {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+	50% {-webkit-transform: translate(-50%, 10px); transform: translate(-50%, 10px);}
+	to {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}}
+
+.floating-minilogo {
+	-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; animation-iteration-count: infinite;
+	-webkit-animation-name: floating-minilogo; -moz-animation-name: floating-minilogo; animation-name: floating-minilogo;
+	-webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out;}
+
+@-webkit-keyframes floating-minilogo {
+	from {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+	50% {-webkit-transform: translate(-50%, 3px); transform: translate(-50%, 3px);}
+	to {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}}
+
+@keyframes floating-minilogo {
+  from {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+  50% {-webkit-transform: translate(-50%, 3px); transform: translate(-50%, 3px);}
+  to {-webkit-transform: translate(-50%, 0); transform: translate(-50%, 0);}}
