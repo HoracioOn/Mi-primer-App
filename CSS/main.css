@@ -115,9 +115,15 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 
 .paralax {height: 345px; display: flex; width: 100%;}
 
+@media (max-width: 1200px) {.paralax-img {width: 100%; display: flex; align-self: center; justify-content: center; opacity: 0;}}
+
 .paralax-img {border-bottom: 2px solid #62f; width: 100%; display: flex; align-self: center; justify-content: center;}
 
-.logo-flota {display: flex; align-self: center; justify-content: center;}
+.logo-flota {display: flex; position: relative; align-self: center; justify-content: center; margin-left: -50%; margin-right: auto;}
+
+.shadowed {
+  -webkit-filter: drop-shadow(2px 2px 2px #555);
+  filter: drop-shadow(2px 2px 2px #225);}
 
 /* Estilo para los inputs.
 -------------------------------------------------- */
@@ -139,7 +145,8 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 	opacity: .5;
 	width: 250px;}
 
-.marca:hover, .marca:active {filter: grayscale(0%); -webkit-filter: grayscale(0%); opacity: 1;}
+.marca:hover, .marca:active {filter: grayscale(0%); -webkit-filter: grayscale(0%); opacity: 1; -webkit-filter: drop-shadow(1px 1px 1px #555);
+  filter: drop-shadow(1px 1px 1px #225);}
 
 .grow {transition: all .2s ease-in-out;}
 
