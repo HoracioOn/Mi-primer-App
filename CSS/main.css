@@ -6,8 +6,6 @@
 --------------------------------------------------  */
 html {position: relative; min-height: 100%;}
 
-body {margin-bottom: 300px;}
-
 ::selection {background: #0000ff; color: white;}
 
 hr {margin: 60px;}
@@ -243,26 +241,27 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 /* Footer pegajoso, posición y medidas
 -------------------------------------------------- */
 .footer {position: absolute; bottom: 0; height: 331px;}
+body {margin-bottom: 300px;}
 
 /* Footer más alto en pantallas pequeñas */
-@media (max-width: 768px) {
-	.footer {height: 550px;}
-	body {margin-bottom: 550px;}
+@media (max-width: 767px) {
+	.footer {height: 540px;}
+	body {margin-bottom: 540px;}
 	hr {margin: 32px;}}
 
 @media (max-width: 537px) {
-  .footer {height: 570px;}
-  body {margin-bottom: 570;}
+  .footer {height: 550px;}
+  body {margin-bottom: 550px;}
   hr {margin: 32px;}}
 
 @media (max-width: 358px) {
-  .footer {height: 590px;}
-  body {margin-bottom: 590;}
+  .footer {height: 580px;}
+  body {margin-bottom: 580px;}
   hr {margin: 32px;}}
 
-@media (max-width: 308px) {
-  .footer {height: 650px;}
-  body {margin-bottom: 650;}
+@media (max-width: 305px) {
+  .footer {height: 610px;}
+  body {margin-bottom: 610px;}
   hr {margin: 32px;}}
 
 /* Estilo y color del Footer
