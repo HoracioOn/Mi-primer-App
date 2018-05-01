@@ -251,18 +251,15 @@ body {margin-bottom: 300px;}
 
 @media (max-width: 537px) {
   .footer {height: 550px;}
-  body {margin-bottom: 550px;}
-  hr {margin: 32px;}}
+  body {margin-bottom: 550px;}}
 
 @media (max-width: 358px) {
   .footer {height: 580px;}
-  body {margin-bottom: 580px;}
-  hr {margin: 32px;}}
+  body {margin-bottom: 580px;}}
 
 @media (max-width: 305px) {
   .footer {height: 610px;}
-  body {margin-bottom: 610px;}
-  hr {margin: 32px;}}
+  body {margin-bottom: 610px;}}
 
 /* Estilo y color del Footer
 -------------------------------------------------- */
@@ -272,7 +269,7 @@ footer a {color: #999; text-decoration:none;}
 
 footer a:hover, footer a:focus {color: #ccc; text-decoration:none;}
 
-footer .form-control {
+footer.form-control {
 	background-color: #1f2022;
 	font-weight: bold;
 	text-align: center;
