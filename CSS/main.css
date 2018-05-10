@@ -102,7 +102,8 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 	align-items: center;
 	align-content: space-around;
 	margin-left: auto;
-	margin-right: auto;}
+	margin-right: auto;
+	padding-bottom: 25px;}
 
 .contenedor-vertcent {
 	display: flex;
@@ -131,7 +132,7 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 
 @media (max-width: 1200px) {.paralax-img {width: 100%; display: flex; align-self: center; justify-content: center; opacity: 0;}}
 
-.paralax-img {border-bottom: 2px solid #33a; width: 100%;}
+.paralax-img {width: 100%;}
 
 .logo-flota {display: flex; position: relative; align-self: center; justify-content: center; margin-left: -50%; margin-right: auto;}
 
