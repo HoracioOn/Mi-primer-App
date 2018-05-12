@@ -88,7 +88,7 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 
 /* Define el ancho de los párrafos
 --------------------------------------------------  */
-.parrafos {width: 50%;}
+.parrafos {width: 80%;}
 
 /* Define el ancho de los párrafos en pantallas pequeñas */
 @media (max-width: 1100px) {.parrafos {width: 80%;}}
@@ -105,6 +105,9 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 	margin-right: auto;
 	padding-bottom: 25px;}
 
+.porciento70 {width: 50%;}
+@media (max-width: 1100px) {.porciento70 {width: 80%;}}
+
 .contenedor-vertcent {
 	display: flex;
 	flex-direction: column;
@@ -118,6 +121,8 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 @media (max-width: 500px) {.contenedor-vertcent {width: 90%;}}
 
 .contenedorow {display: flex; flex-flow: row wrap; justify-content: space-around; width: 70%;}
+
+.card {margin-top: 45px; -webkit-filter: drop-shadow(3px 3px 3px #999); filter: drop-shadow(1px 1px 2px #999);}
 
 /* Define estilos de fondo para los contenedores.
 (ejemplo: artículo o div)
@@ -160,8 +165,7 @@ body {font-family: 'PT Sans', sans-serif; background-color: #F9FAFC;}
 	opacity: .5;
 	width: 250px;}
 
-.marca:hover, .marca:active {filter: grayscale(0%); -webkit-filter: grayscale(0%); opacity: 1; -webkit-filter: drop-shadow(1px 1px 1px #555);
-  filter: drop-shadow(1px 1px 1px #225);}
+.marca:hover, .marca:active {filter: grayscale(0%); -webkit-filter: grayscale(0%); opacity: 1; -webkit-filter: drop-shadow(1px 1px 1px #555); filter: drop-shadow(1px 1px 1px #225);}
 
 .grow {transition: all .2s ease-in-out;}
 
